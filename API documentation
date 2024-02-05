@@ -1,0 +1,57 @@
+/orders
+  GET /
+
+  POST /
+    Content-Type: application/json
+
+    json
+      productId:string
+      quantity:number
+
+  GET /:orderId
+
+  DELETE /:orderId
+####################################################
+/products
+  GET /
+
+  POST / 🔒
+    AUTHORIZATION: Bearer <token>
+
+    form-data
+      name:string
+      price:string
+      productImage:file
+
+  GET /:productId
+
+  PATCH /:productId 🔒
+    AUTHORIZATION: Bearer <token>
+
+    json
+      [
+        {
+          "propName": ,
+          "value": 
+        }
+      ]
+
+  DELTE /:productId 🔒
+    AUTHORIZATION: Bearer <token>
+####################################################
+/user
+  POST /signup
+    Content-Type: application/json
+
+    json
+      email:string
+      password:string
+
+    POST /login
+      Content-Type: application/json
+
+      json
+        email:string
+        password:string
+
+  DELETE /:userId 🔒

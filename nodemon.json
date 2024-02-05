@@ -1,0 +1,18 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git"
+  ],
+  "verbose": false,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "MONGO_DB_CONNECTION": "ds243418.mlab.com:43418/rest-api-test",
+    "MONGO_DB_USER_LOGIN": "demjan",
+    "MONGO_DB_USER_PASSWORD": "80682058170",
+    "JWT_KEY": "secret"
+  },
+  "ext": "js json"
+}
