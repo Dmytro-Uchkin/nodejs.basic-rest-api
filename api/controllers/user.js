@@ -9,7 +9,7 @@ exports.add_user = (req, res, next) => {
   .then(user => {
     if (user.length >= 1) {
       res.status(409).json({
-        message: 'Mail exists'
+        message: 'Email exists'
       });
     } else {
       bcrypt.hash(req.body.password, 10, (err, hash) => {

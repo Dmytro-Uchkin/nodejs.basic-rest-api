@@ -9,9 +9,9 @@
   },
   "env": {
     "NODE_ENV": "development",
-    "MONGO_DB_CONNECTION": "ds243418.mlab.com:43418/rest-api-test",
-    "MONGO_DB_USER_LOGIN": "demjan",
-    "MONGO_DB_USER_PASSWORD": "80682058170",
+    "MONGO_DB_CONNECTION": "localhost:27017/nodejs-basic-rest-api",
+    "MONGO_DB_USER_LOGIN": "dmytro",
+    "MONGO_DB_USER_PASSWORD": "qwerty",
     "JWT_KEY": "secret"
   },
   "ext": "js json"
